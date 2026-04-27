@@ -18,7 +18,9 @@ if (isset($_FILES['imagen_nueva']) && $_FILES['imagen_nueva']['error'] === 0){
     
     //si se puedo mover la imagen desde el origen al destino, recargo la página y se carga la nueva imagen.
     if(move_uploaded_file($origen, $destino)){
-        header("Location: index.php");
+        /*HTTP_REFERER es la URL de la página anterior (para poder reutilizar el cod en el ejercicio 9 y 10 y que
+        redireccione desde donde lo llamo.*/
+        header("Location: " . $_SERVER['HTTP_REFERER']);
         exit();
     }else{
         echo "Hubo un error con el archivo o no seleccionaste ninguno.";
