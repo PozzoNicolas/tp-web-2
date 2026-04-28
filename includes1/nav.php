@@ -10,5 +10,6 @@
     <a href="../ejercicio9/index.php">Ejercicio9 | </a>
     <a href="../ejercicio10/index.php">Ejercicio10 | </a>
     <a href="../ejercicio11/index.php">Ejercicio11 | </a>
-    <a href="../ejercicio12/index.php">Ejercicio12</a>
+    <a href="../ejercicio12/index.php">Ejercicio12 | </a>
+    <a href="../ejercicio13/index.php">Ejercicio13</a>
 </nav>
