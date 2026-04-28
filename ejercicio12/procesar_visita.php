@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>Ejercicio 11</title>
+    <title>Ejercicio 12</title>
 </head>
 <body class="w3-container w3-margin">
 <?php
