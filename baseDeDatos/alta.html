@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reclutar Guerrero - Aldea Vikinga</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            margin: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/dark-wood.png');
+            background-repeat: repeat;
+        }
+
+        h1, h2, label, .btn-submit {
+            font-family: 'Cinzel', serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(26, 26, 26, 1)),
+            url('https://images.unsplash.com/photo-1578130325150-f70915a7702a?q=80&w=1600');
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 3px solid #d4af37;
+        }
+
+        header h1 {
+            color: #d4af37;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            margin: -30px auto 50px auto;
+            background: rgba(30, 30, 30, 0.95);
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid #444;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            color: #d4af37;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            background-color: #1a1a1a;
+            border: 1px solid #555;
+            color: #fff;
+            border-radius: 4px;
+            box-sizing: border-box; /* Evita que el padding ensanche el input */
+            transition: 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #d4af37;
+            background-color: #222;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background-color: #c0392b;
+            color: white;
+            padding: 15px;
+            border: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-submit:hover {
+            background-color: #d4af37;
+            color: #1a1a1a;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #888;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        .back-link:hover {
+            color: #d4af37;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Nuevo Guerrero</h1>
+</header>
+
+<div class="container">
+    <form action="insertar.php" method="POST">
+
+        <div class="form-group">
+            <label for="nombre">Nombre del Guerrero</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Ragnar" required>
+        </div>
+
+        <div class="form-group">
+            <label for="apodo">Apodo (Si lo tiene)</label>
+            <input type="text" id="apodo" name="apodo" placeholder="Ej: Lothbrok">
+        </div>
+
+        <div class="form-group">
+            <label for="clan">Clan / Asentamiento</label>
+            <input type="text" id="clan" name="clan" placeholder="Ej: Kattegat">
+        </div>
+
+        <div class="form-group">
+            <label for="fuerza">Nivel de Fuerza (0 - 100)</label>
+            <input type="number" id="fuerza" name="fuerza" min="0" max="100" value="50">
+        </div>
+
+        <button type="submit" class="btn-submit">⚔️ UNIRSE AL EJÉRCITO</button>
+
+        <a href="index.php" class="back-link">← Volver al Salón del Trono</a>
+    </form>
+</div>
+
+</body>
+</html>
